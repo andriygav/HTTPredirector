@@ -1,2 +1,2 @@
-# PrometheusProxy
-A simple extension for proxy prometheus query from http to not secure https.
+# HTTPProxy
+A simple extension for proxy http query from http to not secure https.

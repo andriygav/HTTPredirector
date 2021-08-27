@@ -1,0 +1,13 @@
+urls:
+- name: prometheus
+  path: /api/v1/query
+  args:
+  - query
+  host: 'https://prometheus.d8-monitoring:9090/api/v1/query'
+  headers:
+  - key: Authorization
+    valueBegin: "Bearer " # start with
+    valueEnd: "" # end with
+    valueFrom: "/var/run/secrets/kubernetes.io/serviceaccount/token" # midle of
+  InsecureSkipTLSVerify: 1
+

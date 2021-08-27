@@ -1,0 +1,6 @@
+requests==2.25.0
+Flask==1.1.2
+gunicorn==20.0.4
+pyaml==20.4.0
+configobj==5.0.6
+flask-wtf==0.14.3
