@@ -58,6 +58,7 @@ def init(config, setup):
     return app
 
 def func(host, headers, args, **argv):
+    logging.info(f'request.headers: {request.headers}')
     params = dict()
     for arg in args:
         params[arg] = request.args.get(arg)
