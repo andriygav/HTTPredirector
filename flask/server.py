@@ -58,12 +58,13 @@ def init(config, setup):
     return app
 
 def func(host, headers, args, **argv):
-    logging.info(f'request.headers: {request.headers}')
     params = dict()
     for arg in args:
         params[arg] = request.args.get(arg)
-
+    for key, value in request.headers.items():
+        headers[key] = value
+    logging.info(f'requests headers: {headers}')
     resp = requests.get(host, headers=headers, params=params, verify=False)
     logging.info(f'responce: {resp.text}')
-    logging.info(f'headers: {resp.headers.items()}')
+    logging.info(f'responce headers: {resp.headers.items()}')
     return (resp.text, resp.status_code, resp.headers.items())
