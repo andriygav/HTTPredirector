@@ -24,7 +24,7 @@ jobs:
           path: /tmp/image.tar
   deploy:
     runs-on: ubuntu-latest
-    needs: [build, test]
+    needs: [build]
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
