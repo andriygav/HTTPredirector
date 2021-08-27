@@ -16,11 +16,11 @@ import sys
 
 # -- Project information -----------------------------------------------------
 
-project = 'GrpcProxy'
+project = 'HTTPProxy'
 copyright = '2021, Andrey Grabovoy'
 author = 'Andrey Grabovoy'
 
-version = 0.0.1
+version = '0.0.1'
 master_doc = 'index'
 
 # -- General configuration ---------------------------------------------------
