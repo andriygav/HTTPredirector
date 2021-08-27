@@ -13,9 +13,6 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('../../src/'))
-from grpc_proxy import __version__
-
 
 # -- Project information -----------------------------------------------------
 
@@ -23,7 +20,7 @@ project = 'GrpcProxy'
 copyright = '2021, Andrey Grabovoy'
 author = 'Andrey Grabovoy'
 
-version = __version__
+version = 0.0.1
 master_doc = 'index'
 
 # -- General configuration ---------------------------------------------------
