@@ -32,7 +32,7 @@ def init(config, setup):
     csrf.init_app(app)
 
     for item in setup['urls']:
-        path = os.path.join('/', *(item['name']).split('/'), *(item['path']).split('/'))
+        path = os.path.join('/', *(item['path']).split('/'))
         headers = dict()
         for header in item['headers']:
             prefix = header['valueBegin']
