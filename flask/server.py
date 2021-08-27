@@ -64,4 +64,5 @@ def func(host, headers, args, **argv):
 
     resp = requests.get(host, headers=headers, params=params, verify=False)
     logging.info(f'responce: {resp.text}')
+    logging.info(f'headers: {resp.headers.items()}')
     return (resp.text, resp.status_code, resp.headers.items())
