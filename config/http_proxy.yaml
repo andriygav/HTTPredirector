@@ -10,5 +10,5 @@ urls:
     valueEnd: "" # end with
     valueFrom: "/var/run/secrets/kubernetes.io/serviceaccount/token" # midle of
   InsecureSkipTLSVerify: 1
-  ProxyReturnHeaders: 1
+  ProxyReturnHeaders: 0
 
